@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LabelComponent from './components/LabelComponent';
+import RouteContainer from './containers/RouteContainer';
+import store from './store';
+import { Provider } from 'react-redux';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
     render() {
         return (
-            <div>
-                <LabelComponent label={"Hello world!"} />
-            </div>
+            <RouteContainer />
         )
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('app'))
