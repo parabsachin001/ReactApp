@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/parabsachin001/ReactApp#readme",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.2.5",
+    "@reduxjs/toolkit": "^1.9.3",
     "bootstrap": "^4.4.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "mini-css-extract-plugin": "^0.9.0",
